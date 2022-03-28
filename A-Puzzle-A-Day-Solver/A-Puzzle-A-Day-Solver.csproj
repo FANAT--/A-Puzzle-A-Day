@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputType>Exe</OutputType>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RootNamespace>A_Puzzle_A_Day_Solver</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Конфигурация Debug:
+  Константы: DEBUG;TRACE
+  Отладочная информация: Portable (по умолчанию) -->
+  
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <!-- Конфигурация Release:
+  Константы: TRACE (по умолчанию)
+  Отладочная информация: Portable (по умолчанию) -->
+  
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" />
+
+</Project>

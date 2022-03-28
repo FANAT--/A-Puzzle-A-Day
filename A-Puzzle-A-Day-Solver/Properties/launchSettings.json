@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "A-Puzzle-A-Day-Solver": {
+      "commandName": "Project",
+      "commandLineArgs": "11.01"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RootNamespace>A_Puzzle_A_Day.Tests</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Конфигурация Debug:
+  Константы: DEBUG;TRACE
+  Отладочная информация: Portable (по умолчанию) -->
+  
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <!-- Конфигурация Release:
+  Константы: TRACE (по умолчанию)
+  Отладочная информация: Portable (по умолчанию) -->
+  
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" />
+  
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.2" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\A-Puzzle-A-Day-Solver\A-Puzzle-A-Day-Solver.csproj" />
+  </ItemGroup>
+
+</Project>
